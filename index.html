@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patri Figoni</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 4rem;
+            text-align: center;
+            margin-top: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .price-list {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .wine-list {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .winery-header {
+            background-color: #f8f8f8;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .wine-item {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .wine-name {
+            font-weight: bold;
+            color: #444;
+        }
+
+        .wine-description {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .wine-price {
+            font-weight: bold;
+            color: #222;
+            text-align: right;
+        }
+
+        .shipping-info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .date {
+            text-align: right;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Patri Figoni</h1>
+        <div class="price-list">
+            <div class="date">Noviembre 2024</div>
+            <table class="wine-list">
+                <!-- Caligiore -->
+                <tr><td colspan="2" class="winery-header">Caligiore</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Nature's Legacy Blend Reserva 2019</div>
+                        <div class="wine-description">Malbec 40% / Cab. Sauv. 30% / Bonarda 15% / Ancelotta 10% / Syrah 5%</div>
+                    </td>
+                    <td class="wine-price">$22</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Nature's Legacy Malbec 2018</div>
+                    </td>
+                    <td class="wine-price">$19</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">NATURAL Malbec 2022</div>
+                        <div class="wine-description">sin sulfitos agregados</div>
+                    </td>
+                    <td class="wine-price">$14</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">NATURAL Bonarda 2022</div>
+                        <div class="wine-description">sin sulfitos agregados</div>
+                    </td>
+                    <td class="wine-price">$14</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Malbec Late Harvest</div>
+                        <div class="wine-description">Cosecha Tardia 2023 (dulce) 500cc</div>
+                    </td>
+                    <td class="wine-price">$10</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">CAYANTA Criolla grande</div>
+                    </td>
+                    <td class="wine-price">$10</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">CALIGIORE Malbec Linea varietal</div>
+                    </td>
+                    <td class="wine-price">$9</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">CALIGIORE Cabernet Sauvignon Linea varietal</div>
+                    </td>
+                    <td class="wine-price">$9</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">CALIGIORE Syrah Linea Varietal</div>
+                    </td>
+                    <td class="wine-price">$9</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">CALIGIORE Bonarda 2021 Linea Varietal</div>
+                    </td>
+                    <td class="wine-price">$9</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">4 Vacas Gordas Blend</div>
+                        <div class="wine-description">Malbec y Cabernet Sauvignon</div>
+                    </td>
+                    <td class="wine-price">$6</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">4 Vacas Gordas Rosado de Malbec</div>
+                    </td>
+                    <td class="wine-price">$6</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">4 Vacas Gordas Torrontes Riojano</div>
+                    </td>
+                    <td class="wine-price">$6</td>
+                </tr>
+
+                <!-- Cecchin Maipu -->
+                <tr><td colspan="2" class="winery-header">Cecchin Maipu (Mendoza)</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Flia Cecchin Moscatel de alejandria</div>
+                    </td>
+                    <td class="wine-price">$8</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Flia Cecchin Rosado de Malbec</div>
+                    </td>
+                    <td class="wine-price">$8</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Flia Cecchin Chardonnay</div>
+                    </td>
+                    <td class="wine-price">$8</td>
+                </tr>
+
+                <!-- Sorocayo -->
+                <tr><td colspan="2" class="winery-header">Sorocayo Calingasta (San Juan)</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">SOROCAYO SOROCAYO MALBEC</div>
+                    </td>
+                    <td class="wine-price">$11</td>
+                </tr>
+
+                <!-- MT Perdriel -->
+                <tr><td colspan="2" class="winery-header">MT Perdriel (Mendoza)</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">MTB Blend</div>
+                        <div class="wine-description">Blend de Malbec, Petit Verdot y Cabernet Sauvignon</div>
+                    </td>
+                    <td class="wine-price">$11</td>
+                </tr>
+
+                <!-- Flia Salas -->
+                <tr><td colspan="2" class="winery-header">Flia Salas Maipu (Mendoza)</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Acariciado Malbec Blanc de Noire</div>
+                    </td>
+                    <td class="wine-price">$9</td>
+                </tr>
+
+                <!-- EJES -->
+                <tr><td colspan="2" class="winery-header">EJES San Rafael (Mendoza)</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Naranjo de blend de blancas</div>
+                    </td>
+                    <td class="wine-price">$8</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Blanco Dulce Natural</div>
+                    </td>
+                    <td class="wine-price">$8</td>
+                </tr>
+
+                <!-- STUTZ -->
+                <tr><td colspan="2" class="winery-header">STUTZ Cafayate (Salta)</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Torrontes</div>
+                        <div class="wine-description">Torrontes (seco)</div>
+                    </td>
+                    <td class="wine-price">$9</td>
+                </tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Torrontes tardio</div>
+                        <div class="wine-description">Torrontes Cosecha Tardia (dulce)</div>
+                    </td>
+                    <td class="wine-price">$10</td>
+                </tr>
+
+                <!-- ARGENTO -->
+                <tr><td colspan="2" class="winery-header">ARGENTO</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Pinot Grigio 2023</div>
+                    </td>
+                    <td class="wine-price">$8</td>
+                </tr>
+
+                <!-- QUINDE -->
+                <tr><td colspan="2" class="winery-header">QUINDE Mendoza</td></tr>
+                <tr>
+                    <td class="wine-item">
+                        <div class="wine-name">Vermouth Rosso</div>
+                        <div class="wine-description">Estilo Italiano</div>
+                    </td>
+                    <td class="wine-price">$13</td>
+                </tr>
+            </table>
+            <div class="shipping-info">
+                ENVIO EN CABA $3.500
+            </div>
+        </div>
+    </div>
+</body>
+</html>
